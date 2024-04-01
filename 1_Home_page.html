@@ -13,7 +13,7 @@
     color: #fff; /* White text */
   }
   header {
-    background-color: #1565C0; /* Dark blue header */
+    background-color: #90CAF9; /* Dark blue header */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -21,15 +21,27 @@
   }
   .logo {
     font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    background-color: #1976D2; /* Blue button background color */
+    transition: background-color 0.3s; /* Add smooth transition */
   }
-  .search-bar {
-    flex: 1;
-    margin: 0 20px;
-    padding: 5px 10px;
-    border: 1px solid #fff; /* White border */
+  .logo:hover {
+    background-color: #1565C0; /* Darker blue on hover */
+  }
+  .our-offers-button, .customer-care-button {
+    background-color: #1976D2; /* Blue button background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    border: none;
     border-radius: 5px;
-    background-color: #64B5F6; /* Light blue search bar */
-    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Add smooth transition */
+  }
+  .our-offers-button:hover, .customer-care-button:hover {
+    background-color: #1565C0; /* Darker blue on hover */
   }
   .introduction {
     background-color: #90CAF9; /* Light blue introduction section */
@@ -46,9 +58,10 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    color: #fff; /* Set offer text color to white */
   }
   .offer-image {
-    width: 100px; /* Adjust size as needed */
+    width: 200px; /* Increased image width */
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px;
   }
@@ -69,35 +82,41 @@
 </head>
 <body>
   <header>
-    <div class="logo">Pride</div>
-    <input type="text" class="search-bar" placeholder="Search...">
+    <a href="4_product_page.htm" class="logo">Exploit</a>
+    <a href="2_Our_offer.htm" class="our-offers-button">Our Offers</a>
+    <a href="https://wa.me/message/UU7NJJ2IWIAJC1?text=" class="customer-care-button">Customer Care</a> <!-- Modified href for WhatsApp -->
   </header>
   <section class="introduction">
     <h2>Welcome to Our Website Pride Collection</h2>
-    <p>Feel the love in every item from our special Pride Collection, designed with care just for you..</p>
+    <p>Feel the love in every item from our special Pride Collection, designed with care just for you.</p>
     <!-- Additional introduction content goes here -->
   </section>
   <section class="offers">
     <h2>Our offers</h2>
-    <div class="offer">
-      <img src="image/suprise birthday.jpg" alt="Surprise Birthday Package" class="offer-image">
-      <p>Surprise Birthday Package</p>
+    <div class="offer-category">
+      <h3>Birthday Offers</h3>
+      <div class="offer">
+        <img src="image/suprise birthday.jpg" alt="Surprise Birthday Package" class="offer-image">
+        <p>Surprise Birthday Package</p>
+      </div>
     </div>
-    <div class="offer">
-      <img src="image/valentine package.jpg" alt="Valentine's Day Package" class="offer-image">
-      <p>Valentine's Day Package</p>
+    <div class="offer-category">
+      <h3>Seasonal Offers</h3>
+      <div class="offer">
+        <img src="image/valentine package.jpg" alt="Valentine's Day Package" class="offer-image">
+        <p>Valentine's Day Package</p>
+      </div>
     </div>
-    <div class="offer">
-      <img src="image/custopackage.jpg" alt="Customized Items" class="offer-image">
-      <p>Customized Items</p>
-    </div>
-    <div class="offer">
-      <img src="image/suripse package.jpg" alt="Surprise Package" class="offer-image">
-      <p>Surprise Package</p>
-    </div>
-    <div class="offer">
-      <img src="image/jewelry set.jpg" alt="Jewelry Set" class="offer-image">
-      <p>Jewelry Set</p>
+    <div class="offer-category">
+      <h3>Customized Offers</h3>
+      <div class="offer">
+        <img src="image/custopackage.jpg" alt="Customized Items" class="offer-image">
+        <p>Customized Items</p>
+      </div>
+      <div class="offer">
+        <img src="image/suripse package.jpg" alt="Surprise Package" class="offer-image">
+        <p>Surprise Package</p>
+      </div>
     </div>
   </section>
   <section class="product-categories">
@@ -143,4 +162,3 @@
   </section>
 </body>
 </html>
-
