@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Purchase Offer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+  }
+  header {
+    background-color: #1565C0; /* Dark blue header */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  .purchase-form {
+    background-color: #fff; /* White card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+  }
+  .form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+  }
+  .btn {
+    background-color: #1565C0; /* Dark blue button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Purchase Offer</h1>
+  </header>
+  <div class="container">
+    <div class="purchase-form">
+      <form id="purchaseForm">
+        <div class="form-group">
+          <label for="name">Customer Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="order-type">Type of Order:</label>
+          <select id="order-type" name="order-type" required>
+            <option value="">Select Type</option>
+            <option value="Birthday Package">Birthday Package</option>
+            <option value="Valentine's Day Package">Valentine's Day Package</option>
+            <option value="Customized Items">Customized Items</option>
+            <option value="Surprise Package">Surprise Package</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" rows="4"></textarea>
+        </div>
+        <button type="button" class="btn" id="purchaseBtn">Purchase</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('purchaseBtn').addEventListener('click', function() {
+      var name = document.getElementById('name').value;
+      var orderType = document.getElementById('order-type').value;
+      var date = document.getElementById('date').value;
+      var description = document.getElementById('description').value;
+
+      // Format the message with the form data
+      var message = "Customer Name: " + name + "%0a" +
+                    "Type of Order: " + orderType + "%0a" +
+                    "Date: " + date + "%0a" +
+                    "Description: " + description;
+
+      // Encode the message for the URL
+      var encodedMessage = encodeURIComponent(message);
+
+      // Create the WhatsApp message URL with the encoded message
+      var whatsappUrl = "https://wa.me/message/UU7NJJ2IWIAJC1?text=" + encodedMessage;
+
+      // Open WhatsApp with prefilled message
+      window.open(whatsappUrl);
+    });
+  </script>
+</body>
+</html>
