@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View Order</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the body */
+  }
+  .header {
+    background-color: #1565C0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .order-details {
+    margin-bottom: 20px;
+  }
+  .order-item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .order-item h3 {
+    margin-top: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>View Order</h1>
+  </div>
+  <div class="container">
+    <div class="order-details">
+      <h2>Order #12345</h2>
+      <p><strong>Order Date:</strong> January 1, 2023</p>
+    </div>
+    <div class="order-items">
+      <h2>Order Items</h2>
+      <div class="order-item">
+        <h3>Product 1</h3>
+        <p><strong>Price:</strong> $19.99</p>
+        <p><strong>Quantity:</strong> 2</p>
+        <p><strong>Total:</strong> $39.98</p>
+      </div>
+      <div class="order-item">
+        <h3>Product 2</h3>
+        <p><strong>Price:</strong> $24.99</p>
+        <p><strong>Quantity:</strong> 1</p>
+        <p><strong>Total:</strong> $24.99</p>
+      </div>
+      <!-- Add more order items as needed -->
+    </div>
+    <div class="order-total">
+      <h2>Order Total</h2>
+      <p><strong>Total:</strong> $64.97</p>
+    </div>
+  </div>
+</body>
+</html>
+

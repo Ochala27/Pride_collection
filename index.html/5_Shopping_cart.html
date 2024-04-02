@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the body */
+  }
+  .header {
+    background-color: #1565C0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .cart-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  .cart-item img {
+    max-width: 80px;
+    margin-right: 20px;
+  }
+  .cart-item-details {
+    flex-grow: 1;
+  }
+  .cart-item-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .cart-item-price {
+    font-size: 16px;
+    color: #555;
+  }
+  .cart-item-quantity {
+    width: 50px;
+    padding: 5px;
+  }
+  .remove-button {
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .checkout-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  .product-page-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Shopping Cart</h1>
+  </div>
+  <div class="cart-container">
+    <!-- Cart Items -->
+    <div class="cart-item">
+      <img src="stationary1_image.jpg" alt="Stationary 1 Image">
+      <div class="cart-item-details">
+        <h2 class="cart-item-title">Customized Personalized Journals</h2>
+        <p class="cart-item-price">$19.99</p>
+        <input type="number" value="1" class="cart-item-quantity">
+      </div>
+      <button class="remove-button" onclick="removeCartItem(this)">Remove</button>
+    </div>
+    <div class="cart-item">
+      <img src="drinkware1_image.jpg" alt="Drinkware 1 Image">
+      <div class="cart-item-details">
+        <h2 class="cart-item-title">Heat Mugs</h2>
+        <p class="cart-item-price">$14.99</p>
+        <input type="number" value="1" class="cart-item-quantity">
+      </div>
+      <button class="remove-button" onclick="removeCartItem(this)">Remove</button>
+    </div>
+    <!-- Product Page Button -->
+    <a href="4_product_page.htm" class="product-page-button">Product Page</a>
+    <!-- Checkout Button -->
+    <button class="checkout-button" onclick="redirectToCheckout()">Checkout</button>
+  </div>
+
+  <script>
+    function removeCartItem(button) {
+      button.parentElement.remove();
+    }
+
+    function redirectToCheckout() {
+      // Replace 'checkout.html' with the path to your actual checkout page
+      window.location.href = '7_Check_out.htm';
+    }
+  </script>
+</body>
+</html>
+

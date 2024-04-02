@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Detail</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the body */
+  }
+  .header {
+    background-color: #1565C0;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .product-detail-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .product-detail {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .product-description {
+    margin-bottom: 20px;
+  }
+  .product-price {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .add-to-cart:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>Product Detail</h1>
+  </div>
+  <div class="product-detail-container">
+    <!-- Stationary Products -->
+    <div class="product-detail">
+      <img src="stationary1_image.jpg" alt="Stationary 1 Image" class="product-image">
+      <h2 class="product-title">Customized Personalized Journals</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$19.99</p>
+      <button class="add-to-cart" data-product="Customized Personalized Journals" data-price="19.99">Add to Cart</button>
+    </div>
+    <div class="product-detail">
+      <img src="stationary2_image.jpg" alt="Stationary 2 Image" class="product-image">
+      <h2 class="product-title">Customized Pens</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$24.99</p>
+      <button class="add-to-cart" data-product="Customized Pens" data-price="24.99">Add to Cart</button>
+    </div>
+    <!-- Drinkware Products -->
+    <div class="product-detail">
+      <img src="drinkware1_image.jpg" alt="Drinkware 1 Image" class="product-image">
+      <h2 class="product-title">Heat Mugs</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$14.99</p>
+      <button class="add-to-cart" data-product="Heat Mugs" data-price="14.99">Add to Cart</button>
+    </div>
+    <div class="product-detail">
+      <img src="drinkware2_image.jpg" alt="Drinkware 2 Image" class="product-image">
+      <h2 class="product-title">Water Bottles</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$19.99</p>
+      <button class="add-to-cart" data-product="Water Bottles" data-price="19.99">Add to Cart</button>
+    </div>
+    <!-- Accessories Products -->
+    <div class="product-detail">
+      <img src="accessories1_image.jpg" alt="Accessories 1 Image" class="product-image">
+      <h2 class="product-title">Unisex Watches</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$39.99</p>
+      <button class="add-to-cart" data-product="Unisex Watches" data-price="39.99">Add to Cart</button>
+    </div>
+    <div class="product-detail">
+      <img src="accessories2_image.jpg" alt="Accessories 2 Image" class="product-image">
+      <h2 class="product-title">Bracelets</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$19.99</p>
+      <button class="add-to-cart" data-product="Bracelets" data-price="19.99">Add to Cart</button>
+    </div>
+    <!-- Frames and Apparel Products -->
+    <div class="product-detail">
+      <img src="frames_apparel1_image.jpg" alt="Frames and Apparel 1 Image" class="product-image">
+      <h2 class="product-title">Frames and Apparel</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$49.99</p>
+      <button class="add-to-cart" data-product="Frames and Apparel" data-price="49.99">Add to Cart</button>
+    </div>
+    <!-- Bags and Comfy Pillows Products -->
+    <div class="product-detail">
+      <img src="bags_comfypillows1_image.jpg" alt="Bags and Comfy Pillows 1 Image" class="product-image">
+      <h2 class="product-title">Bags</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$34.99</p>
+      <button class="add-to-cart" data-product="Bags" data-price="34.99">Add to Cart</button>
+    </div>
+    <div class="product-detail">
+      <img src="bags_comfypillows2_image.jpg" alt="Bags and Comfy Pillows 2 Image" class="product-image">
+      <h2 class="product-title">Comfy Pillows</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$29.99</p>
+      <button class="add-to-cart" data-product="Comfy Pillows" data-price="29.99">Add to Cart</button>
+    </div>
+    <!-- Gift Boxes and Baskets Products -->
+    <div class="product-detail">
+      <img src="giftboxes_baskets_image.jpg" alt="Gift Boxes and Baskets Image" class="product-image">
+      <h2 class="product-title">Gift Boxes and Baskets</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$39.99</p>
+      <button class="add-to-cart" data-product="Gift Boxes and Baskets" data-price="39.99">Add to Cart</button>
+    </div>
+    <!-- Surprise Packages and Cards Products -->
+    <div class="product-detail">
+      <img src="surprisepackages_cards_image.jpg" alt="Surprise Packages and Cards Image" class="product-image">
+      <h2 class="product-title">Surprise Packages and Cards</h2>
+      <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dui eu nunc tincidunt eleifend.</p>
+      <p class="product-price">$49.99</p>
+      <button class="add-to-cart" data-product="Surprise Packages and Cards" data-price="49.99">Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const addToCartButtons = document.querySelectorAll('.add-to-cart');
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const productName = this.getAttribute('data-product');
+          const productPrice = parseFloat(this.getAttribute('data-price'));
+          addToCart(productName, productPrice);
+          redirectToCheckout(); // Redirect to checkout page
+        });
+      });
+
+      function addToCart(productName, productPrice) {
+        // Implement your logic to add products to the shopping cart here
+        // For demonstration, let's just display an alert
+        alert(`Added to cart: ${productName} - $${productPrice}`);
+      }
+
+      function redirectToCheckout() {
+        // Replace '5_Shopping_cart.htm' with the path to your actual checkout page
+        window.location.href = '5_Shopping_cart.htm';
+      }
+    });
+  </script>
+</body>
+</html>
+
