@@ -1,1 +1,1 @@
-pride
+Pride_collection
