@@ -1,6 +1,9 @@
 Project name:
 E-commerce website site for pride collection.
 
+![banner](https://github.com/Ochala27/Pride_collection/assets/132355716/391dac25-77f5-47fd-be05-ad9ca4a98792)
+
+
 Introduction:
 Pride Collection E-commerce Platform, helps people find and buy cool products that celebrate diversity and style. I focused on making the website easy to use on computers and phones, and also made sure people could talk directly to the sellers through WhatsApp.
 GitHub:https://github.com/Ochala27
