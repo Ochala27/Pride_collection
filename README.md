@@ -90,7 +90,7 @@ Acceptance Criteria:
 
 Ø Clicking on the button opens a chat window with the vendor's WhatsApp number pre-filled.
 
-Contribution
+Contribution:
 Onuche Ochala 
 
 
